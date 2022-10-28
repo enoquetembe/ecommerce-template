@@ -8,6 +8,8 @@ import Tee from "./assets/images/icons/tee.svg"
 import Jacket from "./assets/images/icons/jacket.svg"
 import Watch from "./assets/images/icons/watch.svg"
 import Hat from "./assets/images/icons/hat.svg"
+import { MenuItem } from "./components/MenuItem"
+import { SubmenuItem } from "./components/MenuItem/SubmenuItem"
 
 
 
@@ -890,8 +892,13 @@ export function App() {
                 </div>
 
                 <ul className="sidebar-menu-category-list">
-
-                  <li className="sidebar-menu-category">
+                    
+                    <MenuItem image={Dress} title="clothes">
+                      <ul className="sidebar-submenu-category-list" data-accordion>
+                        <SubmenuItem productName="Clothes"  price={300}/>
+                      </ul>
+                    </MenuItem>
+                  {/* <li className="sidebar-menu-category">
 
                     <button className="sidebar-accordion-menu" data-accordion-btn>
 
@@ -941,9 +948,9 @@ export function App() {
 
                     </ul>
 
-                  </li>
+                  </li> */}
 
-                  <li className="sidebar-menu-category">
+                  {/* <li className="sidebar-menu-category">
 
                     <button className="sidebar-accordion-menu" data-accordion-btn>
 
@@ -1180,9 +1187,9 @@ export function App() {
 
                     </ul>
 
-                  </li>
+                  </li>   */}
 
-                  <li className="sidebar-menu-category">
+                  {/* <li className="sidebar-menu-category">
 
                     <button className="sidebar-accordion-menu" data-accordion-btn>
 
@@ -1231,7 +1238,7 @@ export function App() {
 
                     </ul>
 
-                  </li>
+                  </li> */}
 
                 </ul>
 
@@ -1275,7 +1282,7 @@ export function App() {
 
                     </div>
 
-                    <div className="showcase">
+                    {/* <div className="showcase">
 
                       <a href="#" className="showcase-img-box">
                         <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" className="showcase-img"
@@ -1360,7 +1367,7 @@ export function App() {
 
                       </div>
 
-                    </div>
+                    </div> */}
 
                   </div>
 
