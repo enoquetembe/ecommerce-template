@@ -1,12 +1,13 @@
-export function SideShowCase(props) {
+export function MinimalShowCase(props) {
+  
   return (
+    
     <div className="showcase">
       <a href="#" className="showcase-img-box">
         <img
           src={props.image}
-          alt="baby fabric shoes"
-          width="75"
-          height="75"
+          alt="relaxed short full sleeve t-shirt"
+          width="70"
           className="showcase-img"
         />
       </a>
@@ -16,19 +17,16 @@ export function SideShowCase(props) {
           <h4 className="showcase-title">{props.title}</h4>
         </a>
 
-        <div className="showcase-rating">
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-        </div>
+        <a href="#" className="showcase-category">
+          {props.category}
+        </a>
 
         <div className="price-box">
-          <del>{props.prevPrice}</del>
           <p className="price">{props.price}</p>
+          <del>{props.prevPrice}</del>
         </div>
       </div>
     </div>
+
   )
 }

@@ -8,8 +8,26 @@ import Tee from "./assets/images/icons/tee.svg"
 import Jacket from "./assets/images/icons/jacket.svg"
 import Watch from "./assets/images/icons/watch.svg"
 import Hat from "./assets/images/icons/hat.svg"
+import Clothes1 from  "./assets/images/products/clothes-1.jpg"
+import NewJacket from "./assets/images/products/jacket-5.jpg"
+import NewJacket1 from "./assets/images/products/jacket-6.jpg"
+import Testimonial from  "./assets/images/testimonial-1.jpg"
+import Quote from "./assets/images/icons/quotes.svg"
+import CTABanner from "./assets/images/cta-banner.jpg"
+import Blog1 from "./assets/images/blog-1.jpg"
+import Banner1 from "./assets/images/banner-1.jpg"
+import Payment from "./assets/images/payment.png"
+import Shampoo from "./assets/images/products/shampoo.jpg"
+import Jewellery1 from "./assets/images/products/jewellery-1.jpg"
+
 import { MenuItem } from "./components/MenuItem"
 import { SubmenuItem } from "./components/MenuItem/SubmenuItem"
+import { SideShowCase } from "./components/SideShowCase"
+import { MinimalShowCase } from "./components/MinimalShowCase"
+import { NewShowCase } from "./components/NewShowCase"
+import { Image } from "./components/NewShowCase/Image/Index"
+import { BlogCard } from "./components/BlogCard"
+import { SliderItem } from "./components/Banner/SliderItem"
 
 
 
@@ -79,7 +97,7 @@ export function App() {
         </button>
 
         <div className="toast-banner">
-          <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70"/>
+          <img src={Jewellery1}  width="80" height="70"/>
         </div>
 
         <div className="toast-detail">
@@ -764,9 +782,16 @@ export function App() {
 
           <div className="container">
 
-            {/* <div className="slider-container has-scrollbar">
+            <div className="slider-container has-scrollbar">
 
-              <div className="slider-item">
+              <SliderItem 
+                image={Banner1}
+                subtitle="Trending item"
+                title="Women's latest fashion sale"
+                price = "20"
+              />
+
+              {/* <div className="slider-item">
 
                 <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" className="banner-img"/>
 
@@ -784,9 +809,9 @@ export function App() {
 
                 </div>
 
-              </div>
+              </div> */}
 
-              <div className="slider-item">
+              {/* <div className="slider-item">
 
                 <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" className="banner-img"/>
 
@@ -824,9 +849,9 @@ export function App() {
 
                 </div>
 
-              </div>
+              </div> */}
 
-            </div> */}
+            </div> 
 
           </div>
 
@@ -1252,7 +1277,13 @@ export function App() {
 
                   <div className="showcase-container">
 
-                    <div className="showcase">
+                    <SideShowCase 
+                      image={Glass} 
+                      title="Baby fabric shoes"
+                      prevPrice="$5.00"
+                      price="$4.00"
+                    />
+                    {/* <div className="showcase">
 
                       <a href="#" className="showcase-img-box">
                         <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
@@ -1280,7 +1311,7 @@ export function App() {
 
                       </div>
 
-                    </div>
+                    </div> */}
 
                     {/* <div className="showcase">
 
@@ -1395,7 +1426,15 @@ export function App() {
 
                     <div className="showcase-container">
 
-                      <div className="showcase">
+                      <MinimalShowCase 
+                        image={Clothes1} 
+                        title="Relaxed Short full Sleeve T-Shirt"
+                        category="Clothes"
+                        price= "$45.00"
+                        prevPrice= "$12.00"
+                      />
+                      
+                      {/* <div className="showcase">
 
                         <a href="#" className="showcase-img-box">
                           <img src="./assets/images/products/clothes-1.jpg" alt="relaxed short full sleeve t-shirt" width="70" className="showcase-img"/>
@@ -1416,8 +1455,9 @@ export function App() {
 
                         </div>
 
-                      </div>
+                      </div> */}
 
+                     {/* 
                       <div className="showcase">
                       
                         <a href="#" className="showcase-img-box">
@@ -1487,13 +1527,13 @@ export function App() {
                       
                         </div>
                       
-                      </div>
+                      </div> */}
 
                     </div>
 
                     <div className="showcase-container">
                     
-                      <div className="showcase">
+                      {/* <div className="showcase">
                     
                         <a href="#" className="showcase-img-box">
                           <img src="./assets/images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket" className="showcase-img"
@@ -1588,7 +1628,7 @@ export function App() {
                         </div>
                     
                       </div>
-                    
+                     */}
                     </div>
 
                   </div>
@@ -1602,8 +1642,16 @@ export function App() {
                   <div className="showcase-wrapper  has-scrollbar">
                 
                     <div className="showcase-container">
+
+                      <MinimalShowCase 
+                        image={Clothes1} 
+                        title="Relaxed Short full Sleeve T-Shirt"
+                        category="Clothes"
+                        price= "$45.00"
+                        prevPrice= "$12.00"
+                      />
                 
-                      <div className="showcase">
+                      {/* <div className="showcase">
                 
                         <a href="#" className="showcase-img-box">
                           <img src="./assets/images/products/sports-1.jpg" alt="running & trekking shoes - white" className="showcase-img"
@@ -1697,12 +1745,12 @@ export function App() {
                 
                         </div>
                 
-                      </div>
+                      </div> */}
                 
                     </div>
                 
                     <div className="showcase-container">
-                
+{/*                 
                       <div className="showcase">
                 
                         <a href="#" className="showcase-img-box">
@@ -1795,7 +1843,7 @@ export function App() {
                 
                         </div>
                 
-                      </div>
+                      </div> */}
                 
                     </div>
                 
@@ -1810,8 +1858,15 @@ export function App() {
                   <div className="showcase-wrapper  has-scrollbar">
                 
                     <div className="showcase-container">
-                
-                      <div className="showcase">
+                      
+                      <MinimalShowCase 
+                        image={Clothes1} 
+                        title="Relaxed Short full Sleeve T-Shirt"
+                        category="Clothes"
+                        price= "$45.00"
+                        prevPrice= "$12.00"
+                      />
+                      {/* <div className="showcase">
                 
                         <a href="#" className="showcase-img-box">
                           <img src="./assets/images/products/watch-3.jpg" alt="pocket watch leather pouch" className="showcase-img"
@@ -1905,12 +1960,12 @@ export function App() {
                 
                         </div>
                 
-                      </div>
+                      </div> */}
                 
                     </div>
                 
                     <div className="showcase-container">
-                
+{/*                 
                       <div className="showcase">
                 
                         <a href="#" className="showcase-img-box">
@@ -2004,7 +2059,7 @@ export function App() {
                 
                         </div>
                 
-                      </div>
+                      </div> */}
                 
                     </div>
                 
@@ -2031,7 +2086,7 @@ export function App() {
                     <div className="showcase">
                       
                       <div className="showcase-banner">
-                        <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" className="showcase-img"/>
+                        <img src={Shampoo} alt="shampoo, conditioner & facewash packs" className="showcase-img"/>
                       </div>
 
                       <div className="showcase-content">
@@ -2121,7 +2176,7 @@ export function App() {
                     <div className="showcase">
                   
                       <div className="showcase-banner">
-                        <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring" className="showcase-img"/>
+                        <img src={Jewellery1} alt="Rose Gold diamonds Earring" className="showcase-img"/>
                       </div>
                   
                       <div className="showcase-content">
@@ -2210,7 +2265,7 @@ export function App() {
 
                 <div className="product-grid">
 
-                  <div className="showcase">
+                  {/* <div className="showcase">
 
                     <div className="showcase-banner">
 
@@ -2317,9 +2372,20 @@ export function App() {
                   
                     </div>
                   
-                  </div>
+                  </div> */}
 
-                  <div className="showcase">
+                  <NewShowCase 
+                    image={NewJacket} 
+                    hoverImage={NewJacket1} 
+                    category="Jacket" 
+                    title="MEN Yarn Fleece Full-Zip Jacket" 
+                     price="$45" 
+                     prevPrice="56"
+                  />
+                   
+                
+
+                  {/* <div className="showcase">
                   
                     <div className="showcase-banner">
                       <img src="./assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" className="product-img default"
@@ -2368,9 +2434,9 @@ export function App() {
                   
                     </div>
                   
-                  </div>
+                  </div> */}
 
-                  <div className="showcase">
+                  {/* <div className="showcase">
                   
                     <div className="showcase-banner">
                       <img src="./assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" className="product-img default"
@@ -2836,7 +2902,7 @@ export function App() {
                   
                     </div>
                   
-                  </div>
+                  </div> */}
 
                 </div>
 
@@ -2872,13 +2938,13 @@ export function App() {
 
                 <div className="testimonial-card">
 
-                  <img src="./assets/images/testimonial-1.jpg" alt="alan doe" className="testimonial-banner" width="80" height="80"/>
+                  <img src={Testimonial} alt="alan doe" className="testimonial-banner" width="80" height="80"/>
 
                   <p className="testimonial-name">Alan Doe</p>
 
                   <p className="testimonial-title">CEO & Founder Invision</p>
 
-                  <img src="./assets/images/icons/quotes.svg" alt="quotation" className="quotation-img" width="26"/>
+                  <img src={Quote} alt="quotation" className="quotation-img" width="26"/>
 
                   <p className="testimonial-desc">
                     Lorem ipsum dolor sit amet consectetur Lorem ipsum
@@ -2897,7 +2963,7 @@ export function App() {
 
               <div className="cta-container">
 
-                <img src="./assets/images/cta-banner.jpg" alt="summer collection" className="cta-banner"/>
+                <img src={CTABanner} alt="summer collection" className="cta-banner"/>
 
                 <a href="#" className="cta-content">
 
@@ -3024,7 +3090,36 @@ export function App() {
 
             <div className="blog-container has-scrollbar">
 
-              <div className="blog-card">
+              <BlogCard 
+                image={Blog1} 
+                category="Fashion"
+                title="Clothes Retail KPIs 2021 Guide for Clothes Executives."
+                name="Mr Admin"
+                date="Apr 06, 2002"
+              />
+               <BlogCard 
+                image={Blog1} 
+                category="Fashion"
+                title="Clothes Retail KPIs 2021 Guide for Clothes Executives."
+                name="Mr Admin"
+                date="Apr 06, 2002"
+              />
+               <BlogCard 
+                image={Blog1} 
+                category="Fashion"
+                title="Clothes Retail KPIs 2021 Guide for Clothes Executives."
+                name="Mr Admin"
+                date="Apr 06, 2002"
+              />
+               <BlogCard 
+                image={Blog1} 
+                category="Fashion"
+                title="Clothes Retail KPIs 2021 Guide for Clothes Executives."
+                name="Mr Admin"
+                date="Apr 06, 2002"
+              />
+
+              {/* <div className="blog-card">
 
                 <a href="#">
                   <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" className="blog-banner"/>
@@ -3044,9 +3139,9 @@ export function App() {
 
                 </div>
 
-              </div>
+              </div> */}
 
-              <div className="blog-card">
+              {/* <div className="blog-card">
               
                 <a href="#">
                   <img src="./assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
@@ -3113,7 +3208,7 @@ export function App() {
               
                 </div>
               
-              </div>
+              </div> */}
 
             </div>
 
@@ -3406,7 +3501,7 @@ export function App() {
 
           <div className="container">
 
-            <img src="./assets/images/payment.png" alt="payment method" className="payment-img"/>
+            <img src={Payment} alt="payment method" className="payment-img"/>
 
             <p className="copyright">
               Copyright &copy; <a href="#">Anon</a> all rights reserved.
